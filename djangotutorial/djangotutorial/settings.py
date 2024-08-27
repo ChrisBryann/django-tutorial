@@ -28,9 +28,14 @@ ALLOWED_HOSTS = [
     '4dc5cc79-d975-4152-ae5b-acd2edee0b2c-00-1glsqe25pr5si.spock.replit.dev'
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://4dc5cc79-d975-4152-ae5b-acd2edee0b2c-00-1glsqe25pr5si.spock.replit.dev:8080'
+]
+
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
